@@ -12,7 +12,7 @@ const NewComp = () => {
 
   return (
     <div>
-      <h1>New Component</h1>
+      <h1 className='heading'>Main page</h1>
       <div>
         <Link href="/login">Go to login page</Link>
       </div>
