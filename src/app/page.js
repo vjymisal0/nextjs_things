@@ -1,19 +1,32 @@
+"use client";
 import React from 'react';
-import about from './about/page'
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+
 const NewComp = () => {
+  const router = useRouter();
+
+  const navigateTo = (path) => {
+    router.push(`/${path}`);
+  }
+
   return (
     <div>
-      <h1>new component</h1>
+      <h1>New Component</h1>
+      <div>
+        <Link href="/login">Go to login page</Link>
+      </div>
+      <div>
+        <Link href="/about">Go to about page</Link>
+      </div>
+      <div>
+        <button onClick={() => navigateTo('login')}>Go to login page</button>
+      </div>
+      <div>
+        <button onClick={() => navigateTo('about')}>Go to about page</button>
+      </div>
     </div>
   );
 }
 
-export default function Page() {
-  return (
-    <div>
-      <NewComp />
-      <h1>hello</h1>
-      
-    </div>
-  );
-}
+export default NewComp;
