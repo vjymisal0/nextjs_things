@@ -8,6 +8,9 @@ const about = () => {
             <br />
 
             <Link href="/">Go to Home page</Link>
+
+            <br />
+            <Link href="/about/aboutclg">Go to about clg page</Link>
         </div>
     )
 }
