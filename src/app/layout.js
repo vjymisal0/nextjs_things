@@ -11,13 +11,11 @@ export default function RootLayout({ children }) {
         {
           pathName !== "/login" ?
             <ul className="login-menu">
-
               <li>
                 <h4>Login navbar</h4>
               </li>
               <li>
                 <Link href="/login">Login Main</Link>
-
               </li>
               <li>
                 <Link href="/about">About Main</Link>
@@ -28,8 +26,6 @@ export default function RootLayout({ children }) {
             </ul>
             : null
         }
-
-
         {children}
       </body>
     </html>

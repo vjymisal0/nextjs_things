@@ -24,6 +24,8 @@ const NewComp = () => {
       </div>
       <div>
         <button onClick={() => navigateTo('about')}>Go to about page</button>
+        <br />
+        <button onClick={() => navigateTo('studentlist')}>Go to Students list</button>
       </div>
     </div>
   );
