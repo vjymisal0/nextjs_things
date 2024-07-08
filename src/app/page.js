@@ -12,21 +12,8 @@ const NewComp = () => {
 
   return (
     <div>
-      <h1 className='heading'>Main page</h1>
-      <div>
-        <Link href="/login">Go to login page</Link>
-      </div>
-      <div>
-        <Link href="/about">Go to about page</Link>
-      </div>
-      <div>
-        <button onClick={() => navigateTo('login')}>Go to login page</button>
-      </div>
-      <div>
-        <button onClick={() => navigateTo('about')}>Go to about page</button>
-        <br/>
-        <button onClick={() => navigateTo('studentlist')}>Go to Students list</button>
-      </div>
+      <h1>Fetch Data with API in client component</h1>
+      <Link href="/productlist">Go to products list</Link>
     </div>
   );
 }

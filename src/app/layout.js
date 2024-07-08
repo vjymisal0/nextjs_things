@@ -8,24 +8,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {
-          pathName !== "/login" ?
-            <ul className="login-menu">
-              <li>
-                <h4>Login navbar</h4>
-              </li>
-              <li>
-                <Link href="/login">Login Main</Link>
-              </li>
-              <li>
-                <Link href="/about">About Main</Link>
-              </li>
-              <li>
-                <Link href="/about/aboutclg">About Clg</Link>
-              </li>
-            </ul>
-            : null
-        }
+
+        <ul className="login-menu">
+          <li>
+            <h4>Login navbar</h4>
+          </li>
+          <li>
+            <Link href="/login">Login Main</Link>
+          </li>
+          <li>
+            <Link href="/about">About Main</Link>
+          </li>
+          <li>
+            <Link href="/about/aboutclg">About Clg</Link>
+          </li>
+        </ul>
+
         {children}
       </body>
     </html>
