@@ -1,19 +1,15 @@
 "use client";
 import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import custom from './custom.module.css'
+
 
 const NewComp = () => {
-  const router = useRouter();
 
-  const navigateTo = (path) => {
-    router.push(`/${path}`);
-  }
 
   return (
     <div>
-      <h1>Fetch Data with API in client component</h1>
-      <Link href="/productlist">Go to products list</Link>
+      <h1 className={custom.headingtag}>Fetch Data with API in client component</h1>
+      <h1>Hello this is inline css integration in Next.js</h1>
     </div>
   );
 }

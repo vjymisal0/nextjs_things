@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react'
+import Product from './product';
 
 export default function page() {
     const [products, setProducts] = useState([])
@@ -22,7 +23,10 @@ export default function page() {
             <h1>Product List</h1>
             <p>Fetch Data with API in client component</p>
             {products.map((item) => (
-                <h3 key={item.id}>Name: {item.title}</h3>
+                <div>
+                    <h3 key={item.id}>Name: {item.title}</h3>
+                    <Product price={item.price} />
+                </div>
             ))}
         </div>
     )

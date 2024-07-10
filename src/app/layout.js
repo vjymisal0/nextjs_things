@@ -1,13 +1,13 @@
 "use client"
 import Link from "next/link";
-import "./login.css"
+  import "./globals.css"
 import { usePathname } from "next/navigation";
 export default function RootLayout({ children }) {
   const pathName = usePathname();
   console.log(pathName);
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
 
         <ul className="login-menu">
           <li>
