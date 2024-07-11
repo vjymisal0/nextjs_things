@@ -8,3 +8,11 @@ const user = () => {
 }
 
 export default user
+
+
+export function generateMetadata({ params }) {
+    return {
+        title: "user page title",
+        description: "its user page description"
+    }
+}

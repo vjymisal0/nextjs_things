@@ -1,4 +1,3 @@
-import Profile from "../../public/vercel.svg"
 import { Inter } from "next/font/google"
 const inter = Inter
   ({
@@ -7,8 +6,6 @@ const inter = Inter
     display: 'swap',
   })
 const NewComp = () => {
-
-
 
   return (
     <div>
