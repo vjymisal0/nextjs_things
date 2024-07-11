@@ -1,17 +1,24 @@
-"use client";
-import React, { useState } from 'react';
-import custom from './custom.module.css'
-import style from './style.module.css'
-
+import Profile from "../../public/vercel.svg"
+import { Inter } from "next/font/google"
+const inter = Inter
+  ({
+    weight: '100',
+    subsets: ['latin'],
+    display: 'swap',
+  })
 const NewComp = () => {
 
-  const [color, setColor] = useState("gray")
+
 
   return (
     <div>
-      <h1 className={color == "red" ? style.red : style.gray}>Fetch Data with API in client component</h1>
-      <button onClick={() => { setColor("red") }}>Click to change color of above text</button>
-      <h1>Hello this is inline css integration in Next.js</h1>
+      {/* <Image src={Profile} alt="your internet fucked you" />
+      <img src={Profile.src}
+        alt="cant load bitchj" /> */}
+
+      <h1 className={inter.className}>
+        Font with Link tag in next js
+      </h1>
     </div>
   );
 }
