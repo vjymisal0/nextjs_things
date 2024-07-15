@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google"
-const inter = Inter
-  ({
-    weight: '100',
-    subsets: ['latin'],
-    display: 'swap',
-  })
+// import { Inter } from "next/font/google"
+// const inter = Inter
+//   ({
+//     weight: '100',
+//     subsets: ['latin'],
+//     display: 'swap',
+//   })
 const NewComp = () => {
 
   return (
@@ -12,10 +12,10 @@ const NewComp = () => {
       {/* <Image src={Profile} alt="your internet fucked you" />
       <img src={Profile.src}
         alt="cant load bitchj" /> */}
-
-      <h1 className={inter.className}>
+      {/* font things below */}
+      {/* <h1 className={inter.className}>
         Font with Link tag in next js
-      </h1>
+      </h1> */}
     </div>
   );
 }
