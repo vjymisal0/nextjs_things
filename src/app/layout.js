@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 export default function RootLayout({ children }) {
   const pathName = usePathname();
-  console.log(pathName);
+  // console.log(pathName);
   return (
     <html lang="en">
       {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
